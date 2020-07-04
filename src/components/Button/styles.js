@@ -33,8 +33,8 @@ export const Container = styled.div`
     color: white;
   }
 
-  .parentheses {
-    padding-bottom: 5px;
+  .sumandsub {
+    font-size: 30px;
   }
 
   .operation {

@@ -8,7 +8,7 @@ const Keyboard = ({ addDigit, addOperation, removeAll, removeOne, result }) => {
   return (
     <Container>
       <Button label="C" click={() => removeAll()} />
-      <Button label="()" parentheses click={(digit) => addDigit(digit)} />
+      <Button label="+/-" sumandsub click={(digit) => addDigit(digit)} />
       <Button icon="delete" click={() => removeOne()} />
       <Button label="÷" operation click={() => addOperation("divi")} />
 
@@ -27,8 +27,8 @@ const Keyboard = ({ addDigit, addOperation, removeAll, removeOne, result }) => {
       <Button label="3" click={(digit) => addDigit(digit)} />
       <Button label="-" operation click={() => addOperation("sub")} />
 
-      <Button label="0" parentheses click={(digit) => addDigit(digit)} />
-      <Button label="." parentheses click={(digit) => addDigit(digit)} />
+      <Button label="0" click={(digit) => addDigit(digit)} />
+      <Button label="." click={(digit) => addDigit(digit)} />
       <Button double operation label="=" click={() => result()} />
     </Container>
   );

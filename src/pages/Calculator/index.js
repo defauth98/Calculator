@@ -34,24 +34,39 @@ function Calculator() {
     setFullAccont(fullAccont);
   }, [numbersArray, arrayPosition, operation]);
 
+  function verifyNumber1() {
+    const number = numbersArray[arrayPosition];
+
+    if (number.split("").length > 1) {
+      const point = number.split(".");
+
+      if (point[1] && point[1].split("").length >= 3) {
+        return false;
+      }
+    }
+
+    if (number.split("").length >= 7) return false;
+    else return true;
+  }
+
   function addDigit(digit) {
     const Numbers = [...numbersArray];
 
-    if (digit === "()") {
-      alert("WIP - Work in progress");
+    if (digit === "+/-") {
+      Numbers[arrayPosition] = Numbers[arrayPosition] =
+        Numbers[arrayPosition] * -1;
 
-      return;
-    }
-
-    if (digit === ".") {
-      alert("WIP - Work in progress");
-
+      setNumbersArray(Numbers);
       return;
     }
 
     if (Numbers[arrayPosition] === "0") {
       Numbers[arrayPosition] = digit;
     } else {
+      if (!verifyNumber1()) {
+        alert("ERR!");
+        return;
+      }
       Numbers[arrayPosition] = Numbers[arrayPosition] += digit;
     }
     setNumbersArray(Numbers);

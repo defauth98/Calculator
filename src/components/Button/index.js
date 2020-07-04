@@ -5,9 +5,9 @@ import { Container } from "./styles";
 import { FiDelete } from "react-icons/fi";
 import {} from "react-icons/";
 
-function Button({ label, parentheses, icon, operation, double, click }) {
+function Button({ label, sumandsub, icon, operation, double, click }) {
   let classes = `
-  ${parentheses ? "parentheses" : null} 
+  ${sumandsub ? "sumandsub" : null} 
   ${label ? "label" : null}
   ${icon ? "icon" : null}
   ${operation ? "operation" : null}
