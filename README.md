@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Calculator</h1>
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  </a>
+</p>
 
-## Available Scripts
+<h1 align="center">
+  <img src=".github/calculator.gif" width="80%">
+</h1>
 
-In the project directory, you can run:
+**Descrição**
 
-### `yarn start`
+> Calculadora de operações básicas contruída usando ReactJs
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Funcionalidades
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [x] O usuário pode ver uma tela mostrando o número atual digitado ou o resultado da última operação.
+- [x] O usuário pode ver um teclado de entrada contendo botões para os dígitos de 0 a 9, operações - '+', '-', '/' e '=', um botão 'C' (para limpar) e um botão 'AC' (para limpar tudo).
+- [x] O usuário pode inserir números como seqüências de até 7 dígitos, clicando nos dígitos no painel de entrada. A entrada de qualquer dígito acima de 8 será ignorada.
+- [x] O usuário pode clicar em um botão de operação para exibir o resultado dessa operação em:
+      o resultado da operação anterior e o último número digitado OU os dois últimos números digitados em OR o último número digitado.
+- [x] O usuário pode clicar no botão 'C' para limpar o último número ou a última operação. Se a última entrada do usuário foi uma operação, a exibição será atualizada para o valor que a precedeu.
+- [x] O usuário pode clicar no botão 'CA' para limpar todas as áreas de trabalho internas e definir a exibição como 0.
+- [x] O usuário pode ver 'ERR' exibido se qualquer operação exceder o máximo de 7 dígitos.
+- [x] O usuário pode clicar no botão '+/-' para alterar o sinal do número exibido no momento.
+- [x] O usuário pode ver um botão de ponto decimal ('.') No teclado de entrada para permitir a inserção de números de ponto flutuante de até 3 locais e a execução de operações com o número máximo de casas decimais inseridas para qualquer número.
 
-### `yarn test`
+#### Instalar as depedências do projeto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+# Com yarn
+yarn install
 
-### `yarn build`
+# Com npm
+npm install
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Rodar o projeto
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```sh
+# Com yarn
+yarn start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Com npm
+npm start
+```
 
-### `yarn eject`
+#### Autor
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👤 **Daniel Ribeiro**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Twitter: [@defauth8](https://twitter.com/defauth8)
+- Github: [@defauth8](https://github.com/defauth98)
+- LinkedIn: [@daniel-ribeiro-397604164](https://linkedin.com/in/daniel-ribeiro-397604164)
