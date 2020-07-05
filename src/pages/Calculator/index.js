@@ -34,19 +34,28 @@ function Calculator() {
     setFullAccont(fullAccont);
   }, [numbersArray, arrayPosition, operation]);
 
-  function verifyNumber1() {
-    const number = numbersArray[arrayPosition];
+  function verifyLength(number) {
+    const numberToVerify = number;
 
-    if (number.split("").length > 1) {
-      const point = number.split(".");
+    const arrayOfNumber = numberToVerify.split("");
 
-      if (point[1] && point[1].split("").length >= 3) {
+    if (arrayOfNumber) {
+      if (arrayOfNumber.length > 7) {
         return false;
       }
     }
 
-    if (number.split("").length >= 7) return false;
-    else return true;
+    return true;
+  }
+
+  function verifyPointSize(number) {
+    const decimalPlaces = number.split(".");
+
+    if (decimalPlaces[1] && decimalPlaces[1].split("").length > 3) {
+      return false;
+    }
+
+    return true;
   }
 
   function addDigit(digit) {
@@ -63,13 +72,17 @@ function Calculator() {
     if (Numbers[arrayPosition] === "0") {
       Numbers[arrayPosition] = digit;
     } else {
-      if (!verifyNumber1()) {
-        alert("ERR!");
-        return;
-      }
       Numbers[arrayPosition] = Numbers[arrayPosition] += digit;
     }
-    setNumbersArray(Numbers);
+
+    if (
+      verifyLength(Numbers[arrayPosition]) &&
+      verifyPointSize(Numbers[arrayPosition])
+    ) {
+      setNumbersArray(Numbers);
+    } else {
+      alert("ERR");
+    }
   }
 
   function removeOne() {
