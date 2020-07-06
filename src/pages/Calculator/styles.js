@@ -14,4 +14,6 @@ export const Container = styled.div`
   color: #fff;
 
   border-radius: 34px;
+
+  border: 5px solid black;
 `;

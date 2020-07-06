@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  <img src=".github/calculator.gif" width="80%">
+  <img src=".github/calculator.gif" width="50%">
 </h1>
 
 **Descrição**
