@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/defauth98.github.io/calculator/static/css/main.3489fd56.chunk.css",
+    "main.js": "/defauth98.github.io/calculator/static/js/main.db38d005.chunk.js",
+    "main.js.map": "/defauth98.github.io/calculator/static/js/main.db38d005.chunk.js.map",
+    "runtime-main.js": "/defauth98.github.io/calculator/static/js/runtime-main.c6fa386f.js",
+    "runtime-main.js.map": "/defauth98.github.io/calculator/static/js/runtime-main.c6fa386f.js.map",
+    "static/js/2.b1bb6982.chunk.js": "/defauth98.github.io/calculator/static/js/2.b1bb6982.chunk.js",
+    "static/js/2.b1bb6982.chunk.js.map": "/defauth98.github.io/calculator/static/js/2.b1bb6982.chunk.js.map",
+    "index.html": "/defauth98.github.io/calculator/index.html",
+    "precache-manifest.679b944cc1e99307b757c0976f1a29b4.js": "/defauth98.github.io/calculator/precache-manifest.679b944cc1e99307b757c0976f1a29b4.js",
+    "service-worker.js": "/defauth98.github.io/calculator/service-worker.js",
+    "static/css/main.3489fd56.chunk.css.map": "/defauth98.github.io/calculator/static/css/main.3489fd56.chunk.css.map",
+    "static/js/2.b1bb6982.chunk.js.LICENSE.txt": "/defauth98.github.io/calculator/static/js/2.b1bb6982.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6fa386f.js",
+    "static/js/2.b1bb6982.chunk.js",
+    "static/css/main.3489fd56.chunk.css",
+    "static/js/main.db38d005.chunk.js"
+  ]
+}
